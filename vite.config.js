@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Make sure this is set correctly
+  build: {
+    outDir: 'dist',
+    base: '/Paradise-Nursery/', // Matches the basename in your Router
+  },
 });
